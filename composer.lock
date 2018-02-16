@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "299a5c531bd29e2d0b905a6e6d4e1e4b",
+    "content-hash": "8f5cdceb67e949fdee838bafcd0469f9",
     "packages": [
         {
             "name": "avp-ivas/package1",
-            "version": "dev-test1",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/avp-ivas/package1.git",
@@ -27,18 +27,9 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [
-        {
-            "alias": "dev-master",
-            "alias_normalized": "9999999-dev",
-            "version": "dev-test1",
-            "package": "avp-ivas/package1"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "avp-ivas/package1": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
