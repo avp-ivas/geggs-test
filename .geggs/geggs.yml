@@ -7,9 +7,7 @@ octava_geggs:
     log_file: ./app/logs/geggs.log
     dir:
         vendors:
-            - vendor/avp-lib
-            - vendor/avp-module
-            - vendor/avp-external
+            - vendor/avp-ivas
     commands:
         fetch:
             - Octava\GeggsBundle\Plugin\FetchProjectPlugin
