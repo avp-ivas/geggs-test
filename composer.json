@@ -1,0 +1,8 @@
+{
+    "name": "avp-ivas/geggs-test",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.9",
+        "avp-ivas/package1": "*"
+    }
+}
