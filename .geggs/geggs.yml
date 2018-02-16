@@ -1,0 +1,63 @@
+octava_geggs:
+    timeout:
+        process: 500
+    bin:
+        git: git
+        composer: composer
+    log_file: ./app/logs/geggs.log
+    dir:
+        vendors:
+            - vendor/avp-lib
+            - vendor/avp-module
+            - vendor/avp-external
+    commands:
+        fetch:
+            - Octava\GeggsBundle\Plugin\FetchProjectPlugin
+            - Octava\GeggsBundle\Plugin\FetchVendorPlugin
+        status:
+            - Octava\GeggsBundle\Plugin\StatusPlugin
+        composer-update:
+            - \Octava\GeggsBundle\Plugin\RefreshVendorsByComposerJsonPlugin
+            - \Octava\GeggsBundle\Plugin\GenerateComposerLockPlugin
+            - \Octava\GeggsBundle\Plugin\ComposerUpdatePlugin
+        composer-install:
+            - \Octava\GeggsBundle\Plugin\CheckUnCommittedChangesPlugin
+            - \Octava\GeggsBundle\Plugin\ComposerInstallPlugin
+        checkout:
+            - \Octava\GeggsBundle\Plugin\CheckUnCommittedChangesPlugin
+            - \Octava\GeggsBundle\Plugin\CheckoutProjectPlugin
+            - \Octava\GeggsBundle\Plugin\ComposerInstallPlugin
+        update:
+            - \Octava\GeggsBundle\Plugin\CheckUnCommittedChangesPlugin
+            - \Octava\GeggsBundle\Plugin\UpdateBranchProjectPlugin
+            - \Octava\GeggsBundle\Plugin\ComposerInstallPlugin
+            - \Octava\GeggsBundle\Plugin\CheckUnCommittedChangesPlugin
+            - \Octava\GeggsBundle\Plugin\PullProjectPlugin
+            - \Octava\GeggsBundle\Plugin\AutoResolveProjectComposerConflictPlugin
+            - \Octava\GeggsBundle\Plugin\CheckConflictPlugin
+            - \Octava\GeggsBundle\Plugin\PullVendorPlugin
+            - \Octava\GeggsBundle\Plugin\CheckConflictPlugin
+            - \Octava\GeggsBundle\Plugin\PushVendorPlugin
+            - \Octava\GeggsBundle\Plugin\GenerateComposerLockPlugin
+            - \Octava\GeggsBundle\Plugin\CommitProjectPlugin
+            - \Octava\GeggsBundle\Plugin\PushProjectPlugin
+        merge:
+            - \Octava\GeggsBundle\Plugin\CheckUnCommittedChangesPlugin
+            - \Octava\GeggsBundle\Plugin\UpdateBranchProjectPlugin
+            - \Octava\GeggsBundle\Plugin\ComposerInstallPlugin
+            - \Octava\GeggsBundle\Plugin\CheckUnCommittedChangesPlugin
+            - \Octava\GeggsBundle\Plugin\PullProjectPlugin
+            - \Octava\GeggsBundle\Plugin\AutoResolveProjectComposerConflictPlugin
+            - \Octava\GeggsBundle\Plugin\CheckConflictPlugin
+            - \Octava\GeggsBundle\Plugin\CreateBranchPlugin
+            - \Octava\GeggsBundle\Plugin\CheckoutPlugin
+            - \Octava\GeggsBundle\Plugin\PullVendorPlugin
+            - \Octava\GeggsBundle\Plugin\CheckConflictPlugin
+            - \Octava\GeggsBundle\Plugin\PushVendorPlugin
+            - \Octava\GeggsBundle\Plugin\ModifyComposerJsonPlugin
+            - \Octava\GeggsBundle\Plugin\GenerateComposerLockPlugin
+            - \Octava\GeggsBundle\Plugin\CommitProjectPlugin
+            - \Octava\GeggsBundle\Plugin\PushProjectPlugin
+        create-branch:
+            - \Octava\GeggsBundle\Plugin\CreateBranchPlugin
+            - \Octava\GeggsBundle\Plugin\ModifyComposerJsonPlugin
