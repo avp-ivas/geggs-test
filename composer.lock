@@ -4,41 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d172bfa184bc08c175ad0926defb86db",
+    "content-hash": "8f5cdceb67e949fdee838bafcd0469f9",
     "packages": [
         {
             "name": "avp-ivas/package1",
-            "version": "dev-WWW-123",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/avp-ivas/package1.git",
-                "reference": "566dffdebc341a0268dcec8a4081e778c6111e38"
+                "reference": "c2a576e765907dfad85f091cbcf67ff99f2de777"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avp-ivas/package1/zipball/566dffdebc341a0268dcec8a4081e778c6111e38",
-                "reference": "566dffdebc341a0268dcec8a4081e778c6111e38",
+                "url": "https://api.github.com/repos/avp-ivas/package1/zipball/c2a576e765907dfad85f091cbcf67ff99f2de777",
+                "reference": "c2a576e765907dfad85f091cbcf67ff99f2de777",
                 "shasum": ""
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "description": "avp-ivas/package1",
-            "time": "2018-02-19T08:50:05+00:00"
+            "time": "2018-02-16T10:38:53+00:00"
         }
     ],
     "packages-dev": [],
-    "aliases": [
-        {
-            "alias": "1.0",
-            "alias_normalized": "1.0.0.0",
-            "version": "dev-WWW-123",
-            "package": "avp-ivas/package1"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "avp-ivas/package1": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
