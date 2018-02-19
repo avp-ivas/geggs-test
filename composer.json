@@ -3,6 +3,6 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.9",
-        "avp-ivas/package1": "1.0"
+        "avp-ivas/package1": "dev-WWW-123 as 1.0"
     }
 }
